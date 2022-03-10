@@ -1,0 +1,22 @@
+
+class Array {
+
+    typedef Todo = {
+        var title: String,
+        var completed: Bool,
+    }
+
+    static function main() {
+    
+        var todos: Todo[] = [
+            {title: "Learn Haxe", completed: true}
+            {title: "Eat", completed: false}
+            {title: "Sleep", completed: false}
+        ];
+
+        for (todo in todos) {
+            trace(todo.title);
+        }
+        
+    }
+}
